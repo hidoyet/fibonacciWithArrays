@@ -6,18 +6,18 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
-		System.out.print("Seri kaç elemanlý olacak: ");
+		System.out.print("Seri kaÃ§ elemanlÄ± olacak: ");
 		int serialLength=scanner.nextInt();
-		int[] dizi=new int[serialLength];
+		int[] arr=new int[serialLength];
 		for(int i=0;i<=serialLength-1;i++) {
-			dizi[i]=i;
+			arr[i]=i;
 			if(i==2) {
-				dizi[i]=i-1;
+				arr[i]=i-1;
 			}
 			if(i>2) {
-				dizi[i]=dizi[i-1]+dizi[i-2];
+				arr[i]=arr[i-1]+arr[i-2];
 			}
-			System.out.print(dizi[i]+" ");
+			System.out.print(arr[i]+" ");
 		}
 	}
 
